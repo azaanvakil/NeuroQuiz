@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Quiz App Design System - Dark Modern Theme */
+
+@layer base {
+  :root {
+    --background: 230 15% 8%;       /* Deep dark slate background */
+    --foreground: 210 20% 95%;      /* Light text for readability */
+
+    --card: 230 15% 12%;             /* Slightly lighter card background */
+    --card-foreground: 210 20% 95%;
+
+    --popover: 230 15% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    /* Modern neon-blue gradient for primary actions */
+    --primary: 220 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 100% 65%;
+
+    /* Subtle secondary color */
+    --secondary: 230 15% 20%;
+    --secondary-foreground: 210 20% 80%;
+
+    --muted: 230 15% 25%;
+    --muted-foreground: 210 20% 60%;
+
+    /* Accent color - electric purple */
+    --accent: 270 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success green */
+    --success: 150 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Error red */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 15% 25%;
+    --input: 230 15% 12%;
+    --ring: 220 90% 55%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 90% 55%), hsl(220 100% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(150 70% 45%), hsl(160 70% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(270 80% 55%), hsl(280 90% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(230 15% 12%), hsl(230 15% 20%));
+
+    /* Shadows for modern depth */
+    --shadow-elegant: 0 10px 30px -10px hsl(220 90% 55% / 0.4);
+    --shadow-success: 0 10px 30px -10px hsl(150 70% 45% / 0.4);
+    --shadow-glow: 0 0 40px hsl(220 100% 65% / 0.5);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Sidebar styles */
+    --sidebar-background: 230 15% 10%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 220 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 80% 55%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 230 15% 25%;
+    --sidebar-ring: 220 90% 55%;
+  }
+
+  /* Dark variant for consistency */
+  .dark {
+    --background: 230 15% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 230 15% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 230 15% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 220 90% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 15% 20%;
+    --secondary-foreground: 210 20% 80%;
+
+    --muted: 230 15% 25%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 270 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 15% 25%;
+    --input: 230 15% 12%;
+    --ring: 220 90% 55%;
+
+    --sidebar-background: 230 15% 10%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 220 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 80% 55%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 230 15% 25%;
+    --sidebar-ring: 220 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
